@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3b2e1f;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            font-size: 16px;
+            cursor: pointer;
+            color: #3b2e1f;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-image: url("books.jpg"); /* Change to your image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #2d1e0e;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #4b3b2a;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 14px 28px;
+            font-size: 18px;
+            border: none;
+            background: #d4a94e;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #c39230;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+	<tr class="menu">
+        <td>
+            <a href="homepage.html">Home</a>
+        </td>
+    </tr>
+
+    <div class="navbar">
+        <div class="logo">Online Book Store</div>
+
+        <ul>
+            <li>Home</li>
+            <li>Login</li>
+            <li>Registation</li>
+            <li>Catalogue</li>
+            <li>Cart</li>
+        </ul>
+
+        <div class="icons">
+            🔍
+            🛒
+            👤
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Discover Your Next Great Book</h1>
+        <p>Explore a world of knowledge, imagination, and adventure.</p>
+        <button>Browse Collection</button>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        body {
+            background-image: url("book2.jpg") ;/* change this image path */
+            background-size: cover;       /* image covers full page */
+            background-repeat: no-repeat; /* no repeat */
+            background-attachment: fixed; /* fixed background */
+            font-family: Arial;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.8); /* transparent white box */
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .menu td {
+            text-align: center;
+            font-weight: bold;
+        }
+        .side-menu {
+            width: 20%;
+            font-weight: bold;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        a {
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- Logo + Website Name -->
+    <tr>
+        <td rowspan="2" style="width: 15%;">
+            <img src="C:/Users/raith/OneDrive/Desktop/Fsd project/online books/imgae2.jpg" class="logo" alt="Logo" width="80" height="80">
+        </td>
+        <td style="font-size: 28px; font-weight: bold;">Online Books Store</td>
+    </tr>
+
+    <!-- Navigation Bar -->
+    <tr class="menu">
+        <td>
+            <a href="homepage.html">Home</a>
+            <a href="loginpage.html">Login</a>
+            <a href="registrationpage.html">Registration</a>
+            <a href="catologuepage.html">Catalogue</a>
+            <a href="cartpage.html">Cart</a>
+        </td>
+    </tr>
+
+    <!-- Left Menu + Description -->
+    <tr>
+        <td class="side-menu">
+            <ul>
+                <li><a href="catalogue_it.html">IT</a></li><br>
+                <li><a href="catalogue_cse.html">CSE</a></li><br>
+                <li><a href="catalogue_ece.html">ECE</a></li><br>
+                <li><a href="catalogue_eee.html">EEE</a></li><br>
+            </ul>
+        </td>
+
+        <td>
+            <h2>Description of the Web Site</h2>
+            <p>
+                This is the homepage of the online book store where users can browse books,
+                view categories, register, add items to the cart, and make purchases.
+            </p>
+            <br>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

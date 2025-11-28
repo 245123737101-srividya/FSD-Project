@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Online Book Store</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("book3.jpg"); /* Add your image path */
+            background-size: cover;       /* Cover full screen */
+            background-position: center;  /* Center image */
+            background-repeat: no-repeat; /* No repeat */
+            background-attachment: fixed; /* Fixed background */
+
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Transparent background for content box */
+        .container, .header, .navbar, .left-menu, .content, table {
+            background: rgba(255, 255, 255, 0.85); /* Light transparent white */
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .header img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout */
+        .container {
+            display: flex;
+        }
+
+        .left-menu {
+            width: 18%;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .left-menu p {
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        /* Content Area */
+        .content {
+            width: 82%;
+            padding: 20px;
+        }
+
+        h2 {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        table, th, td {
+            border: 1px solid #888;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        img.book-cover {
+            width: 80px;
+            height: 100px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="C:\Users\raith\OneDrive\Desktop\Fsd project\online books\imgae2.jpg" alt="Logo">
+        <h1>Online Books Store</h1>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="loginpage.html">Login</a>
+        <a href="registrationpage.html">Registration</a>
+        <a href="catologuepage.html">Catalogue</a>
+        <a href="cartpage.html">Cart</a>
+    </div>
+
+    <div class="container">
+
+        <!-- Left Menu -->
+        <div class="left-menu">
+            <p>CSE</p>
+            <p>ECE</p>
+            <p>EEE</p>
+            <p>CIVIL</p>
+        </div>
+
+        <!-- Catalogue Table -->
+        <div class="content">
+            <h2>Book Catalogue</h2>
+
+            <table>
+                <tr>
+                    <th>Cover</th>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Price</th>
+                    <th>Add to Cart</th>
+                </tr>
+
+                <tr>
+                    <td><img class="book-cover" src="C:\Users\raith\OneDrive\Desktop\Fsd project\online books\c1.jpg" alt="XML Bible"></td>
+                    <td>XML Bible</td>
+                    <td>Winston</td>
+                    <td>Wiley</td>
+                    <td>$40.5</td>
+                    <td><button class="btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td><img class="book-cover" src="C:\Users\raith\OneDrive\Desktop\Fsd project\online books\AIbook.webp" alt="AI Book"></td>
+                    <td>AI</td>
+                    <td>S. Russel</td>
+                    <td>Princeton Hall</td>
+                    <td>$63</td>
+                    <td><button class="btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td><img class="book-cover" src="java.jpg" alt="Java 2"></td>
+                    <td>Java 2</td>
+                    <td>Watson</td>
+                    <td>BPB Publications</td>
+                    <td>$35.5</td>
+                    <td><button class="btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td><img class="book-cover" src="C:\Users\raith\OneDrive\Desktop\Fsd project\online books\html.jpg" alt="HTML in 24 Hours"></td>
+                    <td>HTML in 24 Hours</td>
+                    <td>Sam Peter</td>
+                    <td>Sam Publications</td>
+                    <td>$50</td>
+                    <td><button class="btn">Add to Cart</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
